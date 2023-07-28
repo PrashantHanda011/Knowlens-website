@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+/* banner */
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.banner-content h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+.banner-content p {
+  width: 60%;
+}
+
+
+/* about */
+.home-about-wrapper {
+  margin: 8rem auto;
+}
+
+.home-about-content h2 {
+  font-size: 4.5rem;
+  font-weight: 700
+}
+
+
+.home-about-content p {
+  font-size: 1.3rem;
+}
+
+
+/* common box */
+
+.common-box-wrapper {
+  margin-bottom: 8rem;
+}
+
+.common-box-content h6 {
+  color: #8A8A8A;
+  font-size: 1.2rem;
+}
+
+.common-box-content h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.common-box-content p {
+  font-size: 1.2rem;
+}
+
+
+
+
+/* our coouse  */
+.ourcourses-content {
+  margin-bottom: 8rem;
+}
+
+.ourcourses-content h6 {
+  color: #8A8A8A;
+  font-size: 1.2rem;
+}
+
+.ourcourses-content h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.ourcourses-content p {
+  font-size: 1.2rem;
+}
+
+.ourcourses-card {
+  background-color: #ebebeb;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 23%;
+}
+
+.ourcourses-card img {
+  object-fit: cover;
+  border-radius: 25px;
+  height: 200px;
+}
+
+/* our clients */
+.our-clients-wrapper {
+  margin-bottom: 8rem;
+}
+
+.our-clients-wrapper h6 {
+  color: #8A8A8A;
+  font-size: 1.2rem;
+}
+
+.our-clients-wrapper h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.client-box {
+  height: 150px;
+  width: 150px;
+  border-radius: 20%;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* trust wall */
+.trust-wall-wrapper h6 {
+  color: #8A8A8A;
+  font-size: 1.2rem;
+}
+
+.trust-wall-wrapper h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+
+/* getintouch */
+.get-in-touch-content {
+  margin-bottom: 8rem;
+}
+
+.get-in-touch-content h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.get-in-touch-content input {
+  width: 40%;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+/* review */
+
+
+.trust-wall-wrapper {
+  margin-bottom: 8rem;
+}
+
+/* footer */
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a {
+  font-size: 0.9rem;
+}
+
+.footer-links span {
+  font-size: 0.9rem;
+}
+
+.footer-links span p {
+  font-size: 0.9rem;
+}
