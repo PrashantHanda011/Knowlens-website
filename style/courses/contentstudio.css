@@ -1,0 +1,80 @@
+.offshelf-product-banner {
+  margin-top: 8rem;
+}
+
+.about-gallery-wrapper {
+  margin-bottom: 8rem;
+}
+
+.about-gallery-content h6 {
+  color: #8A8A8A;
+  font-size: 1.2rem;
+}
+
+.about-gallery-content h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.about-gallery-content p {
+  font-size: 1.2rem;
+}
+
+.gallery-wrapper {
+  margin-bottom: 8rem;
+  justify-content: space-between;
+}
+
+.gallery-wrapper-box {
+  width: 30%;
+  background-color: #ebebeb;
+  border-radius: 25px 25px;
+  overflow: hidden;
+  height: 300px;
+}
+
+.gallery-wrapper-box img {
+  object-fit: cover;
+  height: 85%;
+}
+
+.gallery-wrapper-box p {
+  padding: 8px 15px;
+}
+
+
+/* drag and drop */
+.drag-drop-wrapper {
+  margin-bottom: 8rem;
+}
+
+.drag-drop-content h6 {
+  color: #8A8A8A;
+  font-size: 1.2rem;
+}
+
+.drag-drop-content h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.drag-drop-content p {
+  font-size: 1.2rem;
+}
+
+.drag-drop-features {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.drag-drop-features span {
+  display: flex;
+  align-items: center;
+
+}
+
+.drag-drop-features span p {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
