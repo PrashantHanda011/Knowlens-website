@@ -1,0 +1,44 @@
+.research-wrapper {
+  margin: 8rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.research-wrapper p {
+  color: #63686A;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.research-box {
+  width: 22%;
+}
+
+.president-wrapper {
+  margin: 8rem auto;
+}
+
+.president-content h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.partner-wrapper {
+  margin: 8rem auto;
+}
+
+
+
+/* features */
+.features-wrapper {
+  margin: 8rem auto;
+}
+
+
+
+/* features */
+
+.team-wrapper {
+  margin-bottom: 8rem;
+}

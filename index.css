@@ -10,6 +10,7 @@ body {
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.2);
+  height: 10vh;
 }
 
 .nav-links li a {
@@ -199,4 +200,9 @@ body {
 
 .footer-links span p {
   font-size: 0.9rem;
+}
+
+.common-head {
+  font-size: 4rem;
+  font-weight: 700;
 }

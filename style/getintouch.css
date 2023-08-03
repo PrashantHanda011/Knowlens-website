@@ -1,0 +1,24 @@
+.get-in-touch {
+  margin: 4rem auto;
+}
+
+.get-in-touch-btn button {
+  padding: 0.8rem 1.2rem;
+  background-color: white;
+}
+
+.get-in-touch-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.get-in-touch-form input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px 10px;
+}
+
+.get-in-touch-form input::placeholder {
+  font-weight: 700;
+  color: black;
+}
