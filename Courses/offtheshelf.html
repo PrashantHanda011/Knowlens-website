@@ -18,12 +18,12 @@
 </head>
 
 <body>
-    <section class="container-fluid p-0">
-        <nav class="p-4 navbar  bg-dark text-white  ">
+    <section class="container-fluid p-0 offself-wrapper">
+        <nav class="p-4 navbar   text-white  ">
             <div class="container d-flex justify-content-between">
-                <div class="">
-                    logo
-                </div>
+                <a href="/" class="">
+                    <img src="../assets/home/logo.png" alt="">
+                </a>
                 <ul class="d-flex nav-links gap-4 mb-0">
                     <li>
                         <a href="">Refer a Friend</a>
@@ -35,18 +35,18 @@
                         <a href="">Cataglogue</a>
                     </li>
                     <li>
-                        <a href="">Sign in</a>
+                        <a href="/auth/Signin.html">Sign in</a>
                     </li>
                     <li>
-                        <a href="">Enquire</a>
+                        <a href="/contactus/index.html">Enquire</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
         <!-- banner -->
-        <div>
-            <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="d-flex justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide rounded-5 overflow-hidden col-11">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -55,24 +55,30 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                <div class="carousel-inner mt-5 ">
+                    <div class="carousel-item active position-relative  ">
+                        <img src="../assets/home/banner.svg" class="d-block " alt="...">
                         <div class="banner-content">
-                            <h1>Film/ Web based Courses</h1>
-                            <h3>Deeply researched, highly nuanced films shot with real actors in real situations</h3>
-                            <p>Our courses cover content which involves people - emotions, behaviours, visuals. These
-                                are set in real corporate situations, whether in an office, a factory, a retail outlet,
-                                a jewellery store. Professional actors, deeply researched domain content, scripted for a
-                                film medium, these film based courses deliver high impact, along with deeply retentive
-                                learning experiences. </p>
+                            <h1>Impactfull Visual Learning</h1>
+                            <p>We help train your teams to perform to the best of their abilities. Our platform offers
+                                the best in visual learning material and tools to empower your superheroes.</p>
                         </div>
                     </div>
-                    <div class="carousel-item position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-item position-relative ">
+                        <img src="../assets/home/banner.svg" class="d-block w-100" alt="...">
+                        <div class="banner-content">
+                            <h1>Impactfull Visual Learning</h1>
+                            <p>We help train your teams to perform to the best of their abilities. Our platform offers
+                                the best in visual learning material and tools to empower your superheroes.</p>
+                        </div>
                     </div>
-                    <div class="carousel-item position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-item position-relative ">
+                        <img src="../assets/home/banner.svg" class="d-block w-100" alt="...">
+                        <div class="banner-content">
+                            <h1>Impactfull Visual Learning</h1>
+                            <p>We help train your teams to perform to the best of their abilities. Our platform offers
+                                the best in visual learning material and tools to empower your superheroes.</p>
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -88,21 +94,34 @@
             </div>
         </div>
 
-
         <!-- about knowlens -->
-        <div class="container  home-about-wrapper d-flex ">
-            <div class="home-about-content col-6">
-                <h2>About KnowLens</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident mollitia, quo sint corporis
-                    dolorum nobis laudantium, consequuntur tempora excepturi aliquam commodi itaque. Eius a eos tempore
-                    voluptates est porro repudiandae.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, explicabo. Exercitationem facere
-                    temporibus cumque maxime expedita molestias reiciendis dolorum assumenda!</p>
+        <div class="container  home-about-wrapper  ">
+            <div class="d-flex">
+                <div class="home-about-content col-6">
+                    <div class="text-container">
+                        <h2 class="common-yellow gradient-text">About
+                            Our Courses</h2>
+                    </div>
+                    <p><span style="font-size: 3rem;" class="mx-0 px-0"> K</span> assionate about impactful visual
+                        nowlens off the shelf courses cover content which involve people….visuals, emotions, behaviours.
+                        These are set in real corporate situations, whether in a office, a factory, a retail outlet, a
+                        jewellery store. Professional actors, deeply researched domain content, scripted for a film
+                        medium, these film based courses deliver high impact, deeply retentive learning experiences.</p>
+                </div>
+                <div class="col-6">
+                    <img src="../assets/home/about.svg" class="w-100" alt="about">
+                </div>
             </div>
-            <div class="col-6">
-                <img src="../assets/home/about.svg" class="w-100" alt="about">
+            <div class="d-flex gap-5 justify-content-between">
+                <p class="w-75 ">Available on web, and mobile, built upon the edifice of its very own
+                    Learning Management
+                    System, at
+                    Knowlens, we aim to provide learner friendly content supported by just the right technology feature
+                    set designed for learning impact and scalability.</p>
+                <button class="align-self-end p-2 px-4 common-yellow-border ">Read More</button>
             </div>
         </div>
+
 
 
 
@@ -112,11 +131,11 @@
             <div
                 class="offshelf-product-banner-content col-6 d-flex flex-column justify-content-center h-100 px-5 text-white">
                 <h6>Our Products</h6>
-                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                <h4 class="gradient-text">Lorem ipsum dolor sit amet consectetur.</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, obcaecati molestias fugiat
-                    tenetur perferendis iusto adipisci nihil, eveniet qui nam nostrum. Veniam nihil tempora expedita,
                     non temporibus et aperiam. Cupiditate.</p>
-                <button class="text-white p-2 w-50">Explore Our Courses</button>
+                tenetur perferendis iusto adipisci nihil, eveniet qui nam nostrum. Veniam nihil tempora expedita,
+                <button class="bg-white p-2 w-50 common-yellow-border">Explore Our Courses</button>
             </div>
             <div>
 
@@ -127,8 +146,8 @@
         <!-- customer service -->
         <div class="container customer-service">
             <div class="d-flex flex-column customer-service-content align-items-center justify-content-center">
-                <h6>Our courses</h6>
-                <h2>Customer Success Stories</h2>
+                <h6>Case Studies</h6>
+                <h2 class="gradient-text">Customer Success Stories</h2>
                 <p>See how we’ve helped some of the leading companies in India empower their teams.</p>
             </div>
             <div class="mt-5">
@@ -144,71 +163,131 @@
 
         <!-- ourcourses -->
         <div class="py-5 container ourcourses-content">
-            <h6>Our Courses</h6>
-            <h2>Film-based Courses</h2>
-            <div class="d-flex justify-content-between">
-                <p class="w-75">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At officia, natus pariatur
-                    obcaecati cum
-                    maiores aliquam? Voluptate </p>
-                <button class="bg-white p-2 px-4">View All Courses</button>
-            </div>
-            <div class="d-flex flex-wrap gap-4 mt-5">
-
+            <h6 class="text-center">Case Studies</h6>
+            <h2 class="gradient-text text-center">Off the Shelf Courses</h2>
+            <p class=" text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At officia, natus
+                pariatur
+                obcaecati cum
+                maiores aliquam? Voluptate </p>
+            <div class="d-flex flex-wrap gap-5 mt-5">
                 <div class=" ourcourses-card ">
                     <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
                     <div class="p-3">
-                        <h5>Off the Shelf</h5>
-                        <a href="" class="text-black">View Details ></a>
+                        <h5>Prevention of Sexual Harassment</h5>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</small>
+                        <h6 class="mt-2">
+                            <a href="" class="gradient-text ">View Details ></a>
+                        </h6>
                     </div>
                 </div>
                 <div class=" ourcourses-card ">
                     <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
                     <div class="p-3">
-                        <h5>Off the Shelf</h5>
-                        <a href="" class="text-black">View Details ></a>
-                    </div>
-                </div>
-
-                <div class=" ourcourses-card ">
-                    <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
-                    <div class="p-3">
-                        <h5>Off the Shelf</h5>
-                        <a href="" class="text-black">View Details ></a>
+                        <h5>Prevention of Sexual Harassment</h5>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</small>
+                        <h6 class="mt-2">
+                            <a href="" class="gradient-text ">View Details ></a>
+                        </h6>
                     </div>
                 </div>
                 <div class=" ourcourses-card ">
                     <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
                     <div class="p-3">
-                        <h5>Off the Shelf</h5>
-                        <a href="" class="text-black">View Details ></a>
+                        <h5>Prevention of Sexual Harassment</h5>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</small>
+                        <h6 class="mt-2">
+                            <a href="" class="gradient-text ">View Details ></a>
+                        </h6>
                     </div>
                 </div>
                 <div class=" ourcourses-card ">
                     <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
                     <div class="p-3">
-                        <h5>Off the Shelf</h5>
-                        <a href="" class="text-black">View Details ></a>
+                        <h5>Prevention of Sexual Harassment</h5>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</small>
+                        <h6 class="mt-2">
+                            <a href="" class="gradient-text ">View Details ></a>
+                        </h6>
                     </div>
                 </div>
                 <div class=" ourcourses-card ">
                     <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
                     <div class="p-3">
-                        <h5>Off the Shelf</h5>
-                        <a href="" class="text-black">View Details ></a>
+                        <h5>Prevention of Sexual Harassment</h5>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</small>
+                        <h6 class="mt-2">
+                            <a href="" class="gradient-text ">View Details ></a>
+                        </h6>
                     </div>
                 </div>
                 <div class=" ourcourses-card ">
                     <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
                     <div class="p-3">
-                        <h5>Off the Shelf</h5>
-                        <a href="" class="text-black">View Details ></a>
+                        <h5>Prevention of Sexual Harassment</h5>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</small>
+                        <h6 class="mt-2">
+                            <a href="" class="gradient-text ">View Details ></a>
+                        </h6>
                     </div>
                 </div>
                 <div class=" ourcourses-card ">
                     <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
                     <div class="p-3">
-                        <h5>Off the Shelf</h5>
-                        <a href="" class="text-black">View Details ></a>
+                        <h5>Prevention of Sexual Harassment</h5>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</small>
+                        <h6 class="mt-2">
+                            <a href="" class="gradient-text ">View Details ></a>
+                        </h6>
+                    </div>
+                </div>
+                <div class=" ourcourses-card ">
+                    <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
+                    <div class="p-3">
+                        <h5>Prevention of Sexual Harassment</h5>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</small>
+                        <h6 class="mt-2">
+                            <a href="" class="gradient-text ">View Details ></a>
+                        </h6>
+                    </div>
+                </div>
+                <div class=" ourcourses-card ">
+                    <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
+                    <div class="p-3">
+                        <h5>Prevention of Sexual Harassment</h5>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</small>
+                        <h6 class="mt-2">
+                            <a href="" class="gradient-text ">View Details ></a>
+                        </h6>
+                    </div>
+                </div>
+                <div class=" ourcourses-card ">
+                    <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
+                    <div class="p-3">
+                        <h5>Prevention of Sexual Harassment</h5>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</small>
+                        <h6 class="mt-2">
+                            <a href="" class="gradient-text ">View Details ></a>
+                        </h6>
+                    </div>
+                </div>
+                <div class=" ourcourses-card ">
+                    <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
+                    <div class="p-3">
+                        <h5>Prevention of Sexual Harassment</h5>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</small>
+                        <h6 class="mt-2">
+                            <a href="" class="gradient-text ">View Details ></a>
+                        </h6>
+                    </div>
+                </div>
+                <div class=" ourcourses-card ">
+                    <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
+                    <div class="p-3">
+                        <h5>Prevention of Sexual Harassment</h5>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</small>
+                        <h6 class="mt-2">
+                            <a href="" class="gradient-text ">View Details ></a>
+                        </h6>
                     </div>
                 </div>
             </div>
@@ -221,8 +300,8 @@
         <!-- reviews -->
 
         <div class="trust-wall-wrapper container">
-            <h6>What They Say</h6>
-            <h2>Trust Wall</h2>
+            <h6 class="text-center">What They Say</h6>
+            <h2 class="text-center gradient-text">Trust Wall</h2>
             <div class='mt-5 d-flex flex-column gap-5'>
 
                 <!-- first row -->
@@ -326,9 +405,9 @@
 
         <!-- get in touch -->
         <div class=" d-flex flex-column container align-items-center get-in-touch-content get-in">
-            <h2>Get in touch</h2>
+            <h2 class="gradient-text">Get in touch</h2>
             <input type="text" placeholder="Enter Your Email">
-            <button class="bg-white text-black p-2 px-4 mt-5"> Submit</button>
+            <button class="bg-white text-black p-2 common-yellow-border px-4 mt-5"> Submit</button>
         </div>
 
         <!-- footer -->

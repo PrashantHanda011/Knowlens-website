@@ -19,12 +19,12 @@
 </head>
 
 <body>
-    <section class="container-fluid p-0">
-        <nav class="p-4 navbar  bg-dark text-white  ">
+    <section class="container-fluid p-0 lms-wrapper">
+        <nav class="p-4 navbar  text-white ">
             <div class="container d-flex justify-content-between">
-                <div class="">
-                    logo
-                </div>
+                <a href="/" class="">
+                    <img src="../assets/home/logo.png" alt="">
+                </a>
                 <ul class="d-flex nav-links gap-4 mb-0">
                     <li>
                         <a href="">Refer a Friend</a>
@@ -36,18 +36,18 @@
                         <a href="">Cataglogue</a>
                     </li>
                     <li>
-                        <a href="">Sign in</a>
+                        <a href="/auth/Signin.html">Sign in</a>
                     </li>
                     <li>
-                        <a href="">Enquire</a>
+                        <a href="/contactus/index.html">Enquire</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
         <!-- banner -->
-        <div>
-            <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="d-flex justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide rounded-5 overflow-hidden col-11">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -56,21 +56,29 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                <div class="carousel-inner mt-5 ">
+                    <div class="carousel-item active position-relative  ">
+                        <img src="../assets/home/banner.svg" class="d-block " alt="...">
                         <div class="banner-content">
                             <h1>LMS</h1>
-                            <h3>Amet minim mollit non deserunt ullamco est sit aliqua dolor</h3>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <p>The core technology foundation behind the immersive learning experience.</p>
                         </div>
                     </div>
-                    <div class="carousel-item position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-item position-relative ">
+                        <img src="../assets/home/banner.svg" class="d-block w-100" alt="...">
+                        <div class="banner-content">
+                            <h1>LMS</h1>
+                            <p>We help train your teams to perform to the best of their abilities. Our platform offers
+                                the best in visual learning material and tools to empower your superheroes.</p>
+                        </div>
                     </div>
-                    <div class="carousel-item position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-item position-relative ">
+                        <img src="../assets/home/banner.svg" class="d-block w-100" alt="...">
+                        <div class="banner-content">
+                            <h1>LMS</h1>
+                            <p>We help train your teams to perform to the best of their abilities. Our platform offers
+                                the best in visual learning material and tools to empower your superheroes.</p>
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -85,7 +93,6 @@
                 </button>
             </div>
         </div>
-
 
         <!-- Product Banner -->
 
@@ -102,18 +109,100 @@
             </div>
         </div>
 
+        <div class="container d-flex justify-content-center gap-5 mb-5">
+            <button class="p-2 px-4 common-yellow-border">Explore Our Courses</button>
+            <a href="" class="p-2 px-4 text-warning text-decoration-none">LMS Enquiry</a>
+        </div>
 
+        <!-- content builder -->
+
+        <div class="container d-flex mb-5 d-flex  align-items-center pt-5 justify-content-between">
+            <div class="col-6">
+                <img src="../assets/lms/Frame 427321009.svg" class="w-100" alt="common-box">
+            </div>
+            <div class="col-6 ps-5 common-box-content">
+                <h6>Our Products</h6>
+                <h2 class="gradient-text">Content Builder</h2>
+                <p>The heart of the LMS, the Knowlens Content Builder is a content creation and management tool which
+                    helps you get going quickly, easily and efficiently. With a new age visual interface it supports all
+                    kinds of content formats including scorm to videos to document formats.
+                </p>
+            </div>
+        </div>
+
+        <div class="container justify-content-between d-flex  d-flex  align-items-center  ">
+            <div class="col-6 pe-5 common-box-content">
+                <h6>Our Products</h6>
+                <h2 class="gradient-text">Role based learning Paths</h2>
+                <p>At Knowlens, we understand learning is adaptive, based on the needs of every individual. Based on our
+                    deep understanding of functional and domain roles, we have designed the system to support role based
+                    individualised learning journeys.
+                </p>
+            </div>
+            <div class="col-6">
+                <img src="../assets/lms/Frame 427321029.svg" class="w-100" alt="common-box">
+            </div>
+        </div>
+
+        <div class="container d-flex mb-5 d-flex  align-items-center  justify-content-between">
+            <div class="col-6">
+                <img src="../assets/lms/Frame 427321030.svg" class="w-100" alt="common-box">
+            </div>
+            <div class="col-6 ps-5 common-box-content">
+                <h6>Multimodal delivery</h6>
+                <h2 class="gradient-text">Content Builder</h2>
+                <p>The delivery of content happens through multiple modes – web interfaces, mobile apps and many more.
+                </p>
+            </div>
+        </div>
+
+        <div class="container justify-content-between d-flex common-box-wrapper d-flex  align-items-center  ">
+            <div class="col-6 pe-5 common-box-content">
+                <h6>Our Products</h6>
+                <h2 class="gradient-text">Multilingual Contextualisation</h2>
+                <p>The best learning happens in the language of the learner. This insight has driven the design of our
+                    LMS interface to take the learning to the learner rather than the other way round.
+                </p>
+            </div>
+            <div class="col-6">
+                <img src="../assets/lms/Frame 427321031.svg" class="w-100" alt="common-box">
+            </div>
+        </div>
+        <div class="container d-flex mb-5 d-flex  align-items-center  justify-content-between">
+            <div class="col-6">
+                <img src="../assets/lms/Frame 427321030.svg" class="w-100" alt="common-box">
+            </div>
+            <div class="col-6 ps-5 common-box-content">
+                <h6>Multimodal delivery</h6>
+                <h2 class="gradient-text">Gamified Learning</h2>
+                <p>Learning is best amplified through achievement. The Knowlens LMS has dashboards with achievement
+                    summary, competitive leaderboards and scorecards for courses done and learning goals achieved. </p>
+            </div>
+        </div>
+
+        <div class="container justify-content-between d-flex common-box-wrapper d-flex  align-items-center  ">
+            <div class="col-6 pe-5 common-box-content">
+                <h6>Our Products</h6>
+                <h2 class="gradient-text">Flexible Reporting</h2>
+                <p>What gets measured, gets valued. Recognising this fundamental principle in learning, Knowlens offers
+                    a variety of report formats to track and identify learning progress and performance.
+                </p>
+            </div>
+            <div class="col-6">
+                <img src="../assets/lms/Frame 1000000906.svg" class="w-100" alt="common-box">
+            </div>
+        </div>
         <!-- ourcourses -->
-        <div class=" container ourcourses-content">
+        <!-- <div class=" container ourcourses-content">
             <h6>Learning Paths</h6>
-            <h2>Sales: From Zero to Hero</h2>
-            <!-- <div class="d-flex justify-content-between">
+            <h2>Sales: From Zero to Hero</h2> -->
+        <!-- <div class="d-flex justify-content-between">
                 <p class="w-75">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At officia, natus pariatur
                     obcaecati cum
                     maiores aliquam? Voluptate </p>
                 <button class="bg-white p-2 px-4">View All Courses</button>
             </div> -->
-            <div class="d-flex flex-wrap gap-4 mt-5">
+        <!-- <div class="d-flex flex-wrap gap-4 mt-5">
 
                 <div class=" ourcourses-card ">
                     <img src="../assets/home/home.svg" class="w-100 " alt="card-pic">
@@ -173,10 +262,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- ourcourses -->
-        <div class=" container ourcourses-content">
+        <!-- <div class=" container ourcourses-content">
             <h6>Learning Paths</h6>
             <h2>Communication: Mastery</h2>
             <div class="d-flex flex-wrap gap-4 mt-5">
@@ -239,10 +328,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- ourcourses -->
-        <div class=" container ourcourses-content">
+        <!-- <div class=" container ourcourses-content">
             <h6>Learning Paths</h6>
             <h2>Managerial Skills</h2>
             <div class="d-flex flex-wrap gap-4 mt-5">
@@ -305,10 +394,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- ourcourses -->
-        <div class=" container ourcourses-content">
+        <!-- <div class=" container ourcourses-content">
             <h6>Learning Paths</h6>
             <h2>Business Acumen</h2>
             <div class="d-flex flex-wrap gap-4 mt-5">
@@ -371,12 +460,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- customer service -->
         <div class="container customer-service">
             <div class="d-flex flex-column customer-service-content align-items-center justify-content-center">
-                <h6>Our courses</h6>
-                <h2>Customer Success Stories</h2>
+                <h6 class="text-center">Our courses</h6>
+                <h2 class="gradient-text text-center">Customer Success Stories</h2>
                 <p>See how we’ve helped some of the leading companies in India empower their teams.</p>
             </div>
             <div class="mt-5">
@@ -392,8 +481,8 @@
         <!-- reviews -->
 
         <div class="trust-wall-wrapper container">
-            <h6>What They Say</h6>
-            <h2>Trust Wall</h2>
+            <h6 class="text-center">What They Say</h6>
+            <h2 class="text-center gradient-text">Trust Wall</h2>
             <div class='mt-5 d-flex flex-column gap-5'>
 
                 <!-- first row -->
@@ -497,9 +586,9 @@
 
         <!-- get in touch -->
         <div class=" d-flex flex-column container align-items-center get-in-touch-content get-in">
-            <h2>Get in touch</h2>
+            <h2 class="gradient-text">Get in touch</h2>
             <input type="text" placeholder="Enter Your Email">
-            <button class="bg-white text-black p-2 px-4 mt-5"> Submit</button>
+            <button class="bg-white common-yellow-border text-black p-2 px-4 mt-5"> Submit</button>
         </div>
 
         <!-- footer -->

@@ -1,3 +1,8 @@
+.offself-wrapper {
+  background: black;
+  color: white;
+}
+
 .offshelf-product-banner {
   background: linear-gradient(to bottom,
       rgba(81, 79, 79, 0.2),
@@ -20,7 +25,7 @@
 
 .offshelf-product-banner-content button {
   background: transparent;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   margin-top: 20px;
 }
 
@@ -72,4 +77,14 @@
 .stacked-image:not(:first-child) {
   transform: translateY(20px);
   opacity: 0.8;
+}
+
+.lms-wrapper {
+  background: black;
+  color: white;
+}
+
+.customcourse-wrapper {
+  background: black;
+  color: white;
 }

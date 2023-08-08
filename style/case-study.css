@@ -1,3 +1,8 @@
 .case-study-wrapper {
   /* margin: 8rem auto; */
 }
+
+.case-study-wrapper {
+  background-color: black;
+  color: white;
+}

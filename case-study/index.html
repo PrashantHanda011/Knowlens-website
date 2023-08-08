@@ -18,12 +18,12 @@
 </head>
 
 <body>
-    <section class="container-fluid p-0">
-        <nav class="p-4 navbar  bg-dark text-white  ">
+    <section class="container-fluid p-0 case-study-wrapper">
+        <nav class="p-4 navbar  text-white ">
             <div class="container d-flex justify-content-between">
-                <div class="">
-                    logo
-                </div>
+                <a href="/" class="">
+                    <img src="../assets/home/logo.png" alt="">
+                </a>
                 <ul class="d-flex nav-links gap-4 mb-0">
                     <li>
                         <a href="">Refer a Friend</a>
@@ -35,18 +35,18 @@
                         <a href="">Cataglogue</a>
                     </li>
                     <li>
-                        <a href="">Sign in</a>
+                        <a href="/auth/Signin.html">Sign in</a>
                     </li>
                     <li>
-                        <a href="">Enquire</a>
+                        <a href="/contactus/index.html">Enquire</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
         <!-- banner -->
-        <div>
-            <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="d-flex justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide rounded-5 overflow-hidden col-11">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -55,21 +55,29 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                <div class="carousel-inner mt-5 ">
+                    <div class="carousel-item active position-relative  ">
+                        <img src="../assets/home/banner.svg" class="d-block " alt="...">
                         <div class="banner-content">
-                            <h1>Customer Success Stories</h1>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error et odio maxime enim iusto
-                                sapiente velit hic mollitia dolores assumenda quia obcaecati porro autem, vitae, unde
-                                sequi non temporibus quam?</p>
+                            <h1>LMS</h1>
+                            <p>The core technology foundation behind the immersive learning experience.</p>
                         </div>
                     </div>
-                    <div class="carousel-item position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-item position-relative ">
+                        <img src="../assets/home/banner.svg" class="d-block w-100" alt="...">
+                        <div class="banner-content">
+                            <h1>LMS</h1>
+                            <p>We help train your teams to perform to the best of their abilities. Our platform offers
+                                the best in visual learning material and tools to empower your superheroes.</p>
+                        </div>
                     </div>
-                    <div class="carousel-item position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-item position-relative ">
+                        <img src="../assets/home/banner.svg" class="d-block w-100" alt="...">
+                        <div class="banner-content">
+                            <h1>LMS</h1>
+                            <p>We help train your teams to perform to the best of their abilities. Our platform offers
+                                the best in visual learning material and tools to empower your superheroes.</p>
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -89,17 +97,14 @@
 
         <div class="container d-flex justify-content-between case-study-wrapper my-5">
             <div>
-                <button class="p-2 rounded bg-white border-1">By Industry</button>
-                <button class="p-2 rounded bg-white border-1 ms-4">By Learning Path</button>
+                <span class="me-4">View By ></span>
+                <button class="p-2 px-4 rounded bg-transparent text-white  border-white">By Industry</button>
+                <button class="p-2 px-4 rounded bg-warning border-1 ms-4">By Role</button>
             </div>
             <div class="d-flex gap-4">
-                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                    <option selected>View by</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+
+                <select class="form-select form-select-sm bg-transparent text-white border-0"
+                    aria-label=".form-select-sm example">
                     <option selected>Sort</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -109,7 +114,8 @@
         </div>
 
         <div class="container mb-5">
-            <h3><strong>Lorem ipsum dolor sit amet consectetur.</strong></h3>
+            <h4 class="text-secondary">Case Studies</h4>
+            <h3 class="gradient-text mb-5"><strong>Lorem ipsum dolor sit amet consectetur.</strong></h3>
             <div class="d-flex flex-wrap mt-4 justify-content-between gap-5">
                 <div class="col-3 bg-light rounded">
                     <img src="../assets/home/home.svg" class="w-100" alt="">
@@ -175,8 +181,8 @@
 
 
         <div class="trust-wall-wrapper container">
-            <h6>What They Say</h6>
-            <h2>Trust Wall</h2>
+            <h6 class="text-center">What They Say</h6>
+            <h2 class="text-center gradient-text">Trust Wall</h2>
             <div class='mt-5 d-flex flex-column gap-5'>
 
                 <!-- first row -->
@@ -279,9 +285,9 @@
 
         <!-- get in touch -->
         <div class=" d-flex flex-column container align-items-center get-in-touch-content get-in">
-            <h2>Get in touch</h2>
+            <h2 class="gradient-text">Get in touch</h2>
             <input type="text" placeholder="Enter Your Email">
-            <button class="bg-white text-black p-2 px-4 mt-5"> Submit</button>
+            <button class="bg-white common-yellow-border text-black p-2 px-4 mt-5"> Submit</button>
         </div>
 
 

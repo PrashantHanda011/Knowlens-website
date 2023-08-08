@@ -5,12 +5,28 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
+/* #28162b */
+/* #212243 */
+.home-wrapper {
+  background: black;
+  /* background: radial-gradient(circle at center, #000000, transparent 90%, #28162b 80%, #212243); */
+
+  /* background: radial-gradient(45deg, #28162b, #212243); */
+
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 10vh;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  height: 14vh;
+  background: #FFFFFF1A;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(30px)
 }
 
 .nav-links li a {
@@ -45,6 +61,15 @@ body {
 
 .banner-content p {
   width: 60%;
+  font-size: 1.2rem;
+}
+
+.banner-content h1 {
+  color: #EEB543;
+}
+
+.carousel-item img {
+  /* width: 80% !important; */
 }
 
 
@@ -54,8 +79,9 @@ body {
 }
 
 .home-about-content h2 {
-  font-size: 4.5rem;
-  font-weight: 700
+  font-size: 4rem;
+  font-weight: 700;
+  width: 60%;
 }
 
 
@@ -63,6 +89,10 @@ body {
   font-size: 1.3rem;
 }
 
+.home-about-wrapper {
+
+  font-size: 1.3rem;
+}
 
 /* common box */
 
@@ -72,16 +102,17 @@ body {
 
 .common-box-content h6 {
   color: #8A8A8A;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .common-box-content h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
+  width: 90%;
 }
 
 .common-box-content p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 
@@ -98,25 +129,29 @@ body {
 }
 
 .ourcourses-content h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
 .ourcourses-content p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .ourcourses-card {
-  background-color: #ebebeb;
+  background-color: #FFFFFF1A;
   border-radius: 25px;
   overflow: hidden;
-  width: 23%;
+  width: 30%;
+}
+
+.ourcourses-card h6 {
+  font-size: 1rem;
 }
 
 .ourcourses-card img {
   object-fit: cover;
   border-radius: 25px;
-  height: 200px;
+  height: 170px;
 }
 
 /* our clients */
@@ -130,7 +165,7 @@ body {
 }
 
 .our-clients-wrapper h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -202,7 +237,23 @@ body {
   font-size: 0.9rem;
 }
 
+
+/* common */
 .common-head {
   font-size: 4rem;
   font-weight: 700;
+}
+
+.common-yellow {
+  color: #EEB543;
+}
+
+.common-yellow-border {
+  border-bottom: 4px solid #EEB543;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(#F5FFA6, #F5B080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

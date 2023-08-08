@@ -19,12 +19,12 @@
 </head>
 
 <body>
-    <section class="container-fluid p-0">
-        <nav class="p-4 navbar  bg-dark text-white  ">
+    <section class="container-fluid p-0 content-studio-wrapper">
+        <nav class="p-4 navbar   text-white  ">
             <div class="container d-flex justify-content-between">
-                <div class="">
-                    logo
-                </div>
+                <a href="/" class="">
+                    <img src="../assets/home/logo.png" alt="">
+                </a>
                 <ul class="d-flex nav-links gap-4 mb-0">
                     <li>
                         <a href="">Refer a Friend</a>
@@ -36,18 +36,18 @@
                         <a href="">Cataglogue</a>
                     </li>
                     <li>
-                        <a href="">Sign in</a>
+                        <a href="/auth/Signin.html">Sign in</a>
                     </li>
                     <li>
-                        <a href="">Enquire</a>
+                        <a href="/contactus/index.html">Enquire</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
         <!-- banner -->
-        <div>
-            <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="d-flex justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide rounded-5 overflow-hidden col-11">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -56,22 +56,30 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                <div class="carousel-inner mt-5 ">
+                    <div class="carousel-item active position-relative  ">
+                        <img src="../assets/home/banner.svg" class="d-block " alt="...">
                         <div class="banner-content">
                             <h1>About the Content Studio</h1>
-                            <h3>A full-featured studio for enterprises to create in-house videos</h3>
-                            <p>A toolkit to create in-house videos for enterprises
-                                With a media gallery of several thousand video clips in a real corporate environment and
-                                an online video editor for business people</p>
+                            <p>We help train your teams to perform to the best of their abilities. Our platform offers
+                                the best in visual learning material and tools to empower your superheroes.</p>
                         </div>
                     </div>
-                    <div class="carousel-item position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-item position-relative ">
+                        <img src="../assets/home/banner.svg" class="d-block w-100" alt="...">
+                        <div class="banner-content">
+                            <h1>About the Content Studio</h1>
+                            <p>We help train your teams to perform to the best of their abilities. Our platform offers
+                                the best in visual learning material and tools to empower your superheroes.</p>
+                        </div>
                     </div>
-                    <div class="carousel-item position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-item position-relative ">
+                        <img src="../assets/home/banner.svg" class="d-block w-100" alt="...">
+                        <div class="banner-content">
+                            <h1>About the Content Studio</h1>
+                            <p>We help train your teams to perform to the best of their abilities. Our platform offers
+                                the best in visual learning material and tools to empower your superheroes.</p>
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -87,16 +95,15 @@
             </div>
         </div>
 
-
         <!-- Product Banner -->
 
         <div class="container offshelf-product-banner  ">
             <div
                 class="offshelf-product-banner-content col-6 d-flex flex-column justify-content-center h-100 px-5 text-white">
                 <h6>Promo Videos</h6>
-                <h4>See how it works</h4>
+                <h4 class="gradient-text">See how it works</h4>
                 <p>Check out our demo video, and see how intuitive our course building suite is.</p>
-                <button class="text-white p-2 w-50">Explore Our Courses</button>
+                <button class="bg-white common-yellow-border p-2 w-50 ">Explore Our Courses</button>
             </div>
             <div>
 
@@ -111,8 +118,8 @@
                 <img src="../assets/home/common-box.svg" alt="media" class="w-100">
             </div>
             <div class="col-7 about-gallery-content">
-                <h6>About Media Gallery</h6>
-                <h2>AI-Powered Content Repository</h2>
+                <h6>Media Gallery</h6>
+                <h2 class="gradient-text">AI-Powered Content Repository</h2>
                 <p>A unique gallery with several thousand video clips with live actors
                     shot in the corporate environment, across specific industries like banks,
                     retail, jewellery; a platform for you to add your own media assets,
@@ -125,27 +132,27 @@
 
         <!-- gallery -->
         <div class="d-flex container flex-wrap gallery-wrapper gap-5">
-            <div class="gallery-wrapper-box">
+            <div class="gallery-wrapper-box bg-dark">
                 <img src="../assets/home/home.svg" class="w-100" alt="demo">
                 <p>Screenshot</p>
             </div>
-            <div class="gallery-wrapper-box">
+            <div class="gallery-wrapper-box bg-dark">
                 <img src="../assets/home/home.svg" alt="demo" class="w-100">
                 <p>Screenshot</p>
             </div>
-            <div class="gallery-wrapper-box">
+            <div class="gallery-wrapper-box bg-dark">
                 <img src="../assets/home/home.svg" alt="demo" class="w-100">
                 <p>Screenshot</p>
             </div>
-            <div class="gallery-wrapper-box">
+            <div class="gallery-wrapper-box bg-dark">
                 <img src="../assets/home/home.svg" class="w-100" alt="demo">
                 <p>Screenshot</p>
             </div>
-            <div class="gallery-wrapper-box">
+            <div class="gallery-wrapper-box bg-dark">
                 <img src="../assets/home/home.svg" alt="demo" class="w-100">
                 <p>Screenshot</p>
             </div>
-            <div class="gallery-wrapper-box">
+            <div class="gallery-wrapper-box bg-dark">
                 <img src="../assets/home/home.svg" alt="demo" class="w-100">
                 <p>Screenshot</p>
             </div>
@@ -157,7 +164,7 @@
         <div class="container drag-drop-wrapper d-flex align-items-center">
             <div class="col-7 drag-drop-content pe-5">
                 <h6> About Video Editor</h6>
-                <h2>Drag. Drop. Design</h2>
+                <h2 class="gradient-text">Drag. Drop. Design</h2>
                 <p>A video editor for the non video editor…the business SME, the L & D content creator. Create your
                     proprietary video content using your internal videos, combine with Knowlens videos, avatars, and the
                     Knowlens graphics library. Traditional video editing…camera recording, screen recording, audio
@@ -195,7 +202,7 @@
         <div class="container customer-service">
             <div class="d-flex flex-column customer-service-content align-items-center justify-content-center">
                 <h6>Our courses</h6>
-                <h2>Customer Success Stories</h2>
+                <h2 class="gradient-text">Customer Success Stories</h2>
                 <p>See how we’ve helped some of the leading companies in India empower their teams.</p>
             </div>
             <div class="mt-5">
@@ -211,8 +218,8 @@
         <!-- reviews -->
 
         <div class="trust-wall-wrapper container">
-            <h6>What They Say</h6>
-            <h2>Trust Wall</h2>
+            <h6 class="text-center">What They Say</h6>
+            <h2 class="text-center  gradient-text">Trust Wall</h2>
             <div class='mt-5 d-flex flex-column gap-5'>
 
                 <!-- first row -->
@@ -316,9 +323,9 @@
 
         <!-- get in touch -->
         <div class=" d-flex flex-column container align-items-center get-in-touch-content get-in">
-            <h2>Get in touch</h2>
+            <h2 class="gradient-text">Get in touch</h2>
             <input type="text" placeholder="Enter Your Email">
-            <button class="bg-white text-black p-2 px-4 mt-5"> Submit</button>
+            <button class="bg-white  common-yellow-border p-2 px-4 mt-5"> Submit</button>
         </div>
 
         <!-- footer -->
