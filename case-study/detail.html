@@ -18,12 +18,12 @@
 </head>
 
 <body>
-    <section class="container-fluid p-0">
-        <nav class="p-4 navbar  bg-dark text-white  ">
+    <section class="container-fluid p-0 case-study-wrapper">
+        <nav class="p-4 navbar  text-white ">
             <div class="container d-flex justify-content-between">
-                <div class="">
-                    logo
-                </div>
+                <a href="/" class="">
+                    <img src="../assets/home/logo.png" alt="">
+                </a>
                 <ul class="d-flex nav-links gap-4 mb-0">
                     <li>
                         <a href="">Refer a Friend</a>
@@ -35,18 +35,18 @@
                         <a href="">Cataglogue</a>
                     </li>
                     <li>
-                        <a href="">Sign in</a>
+                        <a href="/auth/Signin.html">Sign in</a>
                     </li>
                     <li>
-                        <a href="">Enquire</a>
+                        <a href="/contactus/index.html">Enquire</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
         <!-- banner -->
-        <div>
-            <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="d-flex justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide rounded-5 overflow-hidden col-11">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -55,21 +55,29 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                <div class="carousel-inner mt-5 ">
+                    <div class="carousel-item active position-relative  ">
+                        <img src="../assets/home/banner.svg" class="d-block " alt="...">
                         <div class="banner-content">
-                            <h1>Customer Success Stories</h1>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error et odio maxime enim iusto
-                                sapiente velit hic mollitia dolores assumenda quia obcaecati porro autem, vitae, unde
-                                sequi non temporibus quam?</p>
+                            <h1>LMS</h1>
+                            <p>The core technology foundation behind the immersive learning experience.</p>
                         </div>
                     </div>
-                    <div class="carousel-item position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-item position-relative ">
+                        <img src="../assets/home/banner.svg" class="d-block w-100" alt="...">
+                        <div class="banner-content">
+                            <h1>LMS</h1>
+                            <p>We help train your teams to perform to the best of their abilities. Our platform offers
+                                the best in visual learning material and tools to empower your superheroes.</p>
+                        </div>
                     </div>
-                    <div class="carousel-item position-relative">
-                        <img src="../assets/home/home.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-item position-relative ">
+                        <img src="../assets/home/banner.svg" class="d-block w-100" alt="...">
+                        <div class="banner-content">
+                            <h1>LMS</h1>
+                            <p>We help train your teams to perform to the best of their abilities. Our platform offers
+                                the best in visual learning material and tools to empower your superheroes.</p>
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -85,12 +93,24 @@
             </div>
         </div>
 
+
+
         <!-- Learning Paths -->
-        <div class="d-flex gap-5 container my-5">
-            <div class="col-8">
+        <div class="d-flex position-relative gap-5 container my-5">
+
+            <div class="brand-detail-icons d-flex gap-4 align-items-center">
+                <img src="../assets/common/spotify.png" alt="spotify" height="120" width="120">
+                <div>
+                    <h3 class="gradient-text">Sales for hul</h3>
+                    <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-8 mt-4">
                 <h2><strong>Learning Paths</strong></h2>
                 <h5 class="mt-5"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </strong></h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate vitae neque repudiandae
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditat
+
+                    e vitae neque repudiandae
                     eaque culpa voluptatem libero hic ullam a labore sint ipsam sunt, dicta, inventore nobis optio
                     placeat quod!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ab atque sit nesciunt molestias eius
@@ -132,28 +152,69 @@
                     laboriosam impedit temporibus illum repellat!</p>
             </div>
             <div class="col-4">
-                <h6><strong>Lorem ipsum dolor sit.</strong></h6>
-                <div class="d-flex justify-content-between mt-4">
+                <!-- <h6><strong>Lorem ipsum dolor sit.</strong></h6> -->
+                <!-- <div class="d-flex justify-content-between mt-4">
                     <div class="col-5 bg-light p-5 rounded">
                         <img src="../assets/common/spotify.png" alt="">
                     </div>
                     <div class="col-5 bg-light p-5 rounded">
                         <img src="../assets/common/spotify.png" alt="">
+                    </div>
+                </div> -->
+
+                <div class=" mt-5 border rounded-2 overflow-hidden">
+                    <div class="border-bottom p-3 " style="background-color: #EEB54333;">
+                        <h6 class="text-white">About The Company</h6>
+                    </div>
+                    <div class="p-3">
+                        <div class="w-100 bg-white d-flex justify-content-center">
+                            <img src="../assets/common/spotify.png" height="120" width="120" class="p-4 bg-white "
+                                alt="spotify">
+                        </div>
+                        <div class="border-bottom border-secondary mt-4">
+                            <h6>Industry</h6>
+                            <p>Lorem ipsum dolor sit amet </p>
+                        </div>
+                        <div class="border-bottom border-secondary mt-4">
+                            <h6>Company Size</h6>
+                            <p>$240bn | 330,000 employees</p>
+                        </div>
+                        <div class=" border-secondary mt-4">
+                            <h6>People Trained</h6>
+                            <p>3652 </p>
+                        </div>
                     </div>
                 </div>
 
-                <div class=" mt-5 border rounded-4 overflow-hidden">
-                    <div class="border-bottom bg-secondary  p-3 ">
-                        <h6 class="text-white">Lorem ipsum dolor sit amet consectetur.</h6>
+                <div class=" mt-5 border rounded-2 overflow-hidden">
+                    <div class="border-bottom p-3 " style="background-color: #EEB54333;">
+                        <h6 class="text-white">Key Highlights</h6>
                     </div>
                     <div class="p-3">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi excepturi </p>
-                        <hr />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi excepturi </p>
-                        <hr />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi excepturi </p>
+
+                        <div class="border-bottom border-secondary mt-4">
+                            <h6><strong>Lorem, ipsum dolor.</strong> </h6>
+                            <p>Lorem ipsum dolor sit amet </p>
+                        </div>
+                        <div class="border-bottom border-secondary mt-4">
+                            <h6><strong>Lorem, ipsum dolor.</strong> </h6>
+                            <p>$240bn | 330,000 employees</p>
+                        </div>
+                        <div class=" border-secondary mt-4">
+                            <h6><strong>Lorem, ipsum dolor.</strong> </h6>
+                            <p>3652 </p>
+                        </div>
                     </div>
                 </div>
+
+                <div class="border mt-5 p-4">
+                    <h4>“ Traveling can expose you to new environments and potential health risks, so it's crucial to
+                        take precautions to stay safe and healthy. ” - Antoine BaccarinHead of Sales, HUL</h4>
+                </div>
+                <div>
+
+                </div>
+
             </div>
         </div>
 

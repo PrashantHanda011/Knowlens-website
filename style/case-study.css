@@ -6,3 +6,31 @@
   background-color: black;
   color: white;
 }
+
+.casestudy-boxes {
+  width: 30%;
+  background-color: #FFFFFF1A;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.casestudy-boxes-brand {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+
+}
+
+.brand-detail-icons {
+  position: absolute;
+  top: -7%;
+}
+
+.brand-detail-icons {}
+
+.brand-detail-icons {}
+
+.brand-detail-icons img {
+  background-color: white;
+  padding: 20px;
+}

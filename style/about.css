@@ -73,3 +73,8 @@
   color: #666;
   cursor: pointer;
 }
+
+.about-wrapper {
+  background-color: black;
+  color: white;
+}
