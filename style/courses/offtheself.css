@@ -88,3 +88,36 @@
   background: black;
   color: white;
 }
+
+
+.customcourse-wrapper,
+.offself-wrapper .lms-wrapper {
+  background: linear-gradient(222deg, black, #000000, #1f2043, #2A162D);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.stack-cards__item {
+  position: sticky;
+  top: 5rem;
+  transform-origin: center center;
+  overflow: hidden;
+  list-style: none;
+  height: 70vh;
+  background-position: center;
+  object-fit: contain;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
