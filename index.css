@@ -355,7 +355,7 @@ body {
 
 /* Variables */
 :root {
-  --animationSpeed: 40s;
+  --animationSpeed: 30s;
 }
 
 /* Animation */
@@ -364,8 +364,12 @@ body {
     transform: translateX(0);
   }
 
+  50% {
+    transform: translateX(calc(-250px * 6));
+  }
+
   100% {
-    transform: translateX(calc(-250px * 3));
+    transform: translateX(0);
   }
 }
 
@@ -421,7 +425,11 @@ body {
     transform: translateX(0);
   }
 
+  50% {
+    transform: translateX(calc(250px * 6));
+  }
+
   100% {
-    transform: translateX(calc(250px * 3));
+    transform: translateX(0);
   }
 }
