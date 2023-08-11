@@ -195,3 +195,26 @@ if (stackCards.length > 0 && intersectionObserverSupported && !reducedMotion) {
     new StackCards(stackCards[i]);
   }
 }
+
+
+
+
+
+$(document).ready(function () {
+  $('.carousel').slick({
+    slidesToShow: 3,  // Number of slides to show at a time
+    slidesToScroll: 1,
+    infinite: true,   // Infinite loop
+    centerMode: true, // Center active slide
+    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slick-next">Next</button>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
