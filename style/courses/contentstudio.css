@@ -127,3 +127,42 @@
   background-position: center;
   object-fit: contain;
 }
+
+@media (max-width: 800px) {
+  .gallery-wrapper-box {
+    width: 100%;
+  }
+
+}
+
+
+.content-studio-wrapper {
+  /* background: linear-gradient(to bottom, black, #000000, #1f24be, #2A162D); */
+  background: linear-gradient(-130deg, black, #2b162f, #35345c, black);
+  /* background: linear-gradient(to bottom, #ff0000, #00ff00, #0000ff); */
+
+  /* background-size: 400% 400%; */
+  animation: gradient 10s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background: linear-gradient(-130deg, black, #2b162f, #35345c);
+  }
+
+  25% {
+    background: linear-gradient(-175deg, black, #2b162f, #35345c, black);
+  }
+
+  50% {
+    background: linear-gradient(-200deg, black, #2b162f, #35345c, black);
+  }
+
+  75% {
+    background: linear-gradient(-175deg, black, #2b162f, #35345c, black);
+  }
+
+  100% {
+    background: linear-gradient(-130deg, black, #2b162f, #35345c, black);
+  }
+}

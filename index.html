@@ -22,7 +22,7 @@
 <body>
     <section class="container-fluid p-0 home-wrapper">
         <nav class="p-4 navbar   text-white  ">
-            <div class="container d-flex justify-content-between">
+            <div class="container d-flex justify-content-between p-lg-auto p-0">
                 <a href="/" class="d-flex gap-2 text-decoration-none align-items-center">
                     <img src="https://static.knowlens.com/site/assets/images/small-logo.png" alt="">
                     <h3 class="text-white mb-0">KnowLens</h3>
@@ -44,8 +44,36 @@
                         <a href="/contactus/index.html">Enquire</a>
                     </li>
                 </ul>
+                <span class="nav-links-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><img src="./assets/common/Menu.png" alt="hamburder"></span>
             </div>
         </nav>
+
+
+        <div class="offcanvas offcanvas-end text-white w-75" style="background-color: #1b1a1b;" tabindex="-1"
+            id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <!-- <div class="offcanvas-header">
+            </div> -->
+            <div class="offcanvas-body nav-mobile-links ">
+                <ul class=" gap-4 mb-0">
+                    <li>
+                        <a href="">Refer a Friend</a>
+                    </li>
+                    <li>
+                        <a href="">Corporate</a>
+                    </li>
+                    <li>
+                        <a href="">Cataglogue</a>
+                    </li>
+                    <li>
+                        <a href="/auth/Signin.html">Sign in</a>
+                    </li>
+                    <li>
+                        <a href="/contactus/index.html">Enquire</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <!-- banner -->
         <div class="d-flex justify-content-center">
@@ -58,7 +86,7 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner mt-5 ">
+                <div class="carousel-inner mt-5 " style="height: 70vh;">
                     <div class="carousel-item active position-relative  ">
                         <img src="./assets/home/banner.svg" class="d-block " alt="...">
                         <div class="banner-content">
@@ -67,16 +95,16 @@
                                 the best in visual learning material and tools to empower your superheroes.</p>
                         </div>
                     </div>
-                    <div class="carousel-item position-relative ">
-                        <img src="./assets/common/p2.jpg" class="d-block w-100" style="object-fit: cover;" alt="...">
+                    <div class="carousel-item position-relative " style="height: 70vh;">
+                        <img src="./assets/common/p2.jpg" class="d-block " style="object-fit: cover;" alt="...">
                         <div class="banner-content">
                             <h1>Impactfull Visual Learning</h1>
                             <p>We help train your teams to perform to the best of their abilities. Our platform offers
                                 the best in visual learning material and tools to empower your superheroes.</p>
                         </div>
                     </div>
-                    <div class="carousel-item position-relative ">
-                        <img src="./assets/home/banner.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-item position-relative " style="height: 70vh;">
+                        <img src="./assets/home/banner.svg" class="d-block " style="object-fit: cover;" alt="...">
                         <div class="banner-content">
                             <h1>Impactfull Visual Learning</h1>
                             <p>We help train your teams to perform to the best of their abilities. Our platform offers
@@ -99,29 +127,33 @@
 
         <!-- about knowlens -->
         <div class="container  home-about-wrapper  ">
-            <div class="d-flex">
-                <div class="home-about-content col-6">
+            <div class="d-flex flex-column-reverse flex-lg-row">
+                <div class="home-about-content col-12 col-lg-6">
                     <div class="text-container">
-                        <h2 class="common-yellow gradient-text">About KnowLens</h2>
+                        <h2 class="common-yellow text-lg-start text-center gradient-text mt-3 mt-lg-0">About KnowLens
+                        </h2>
                     </div>
-                    <p><span style="font-size: 3rem;" class="mx-0 px-0"> P</span> assionate about impactful visual
+                    <p class="text-lg-start text-center"><span style="font-size: 3rem;" class="mx-0 px-0 "> P</span>
+                        assionate
+                        about impactful visual
                         learning,
                         the Knowlens has
                         been a pioneer in evangelising visual
                         learning. Its offering straddles the gamut of visual forms in learning from web series to short
                         videos to animation and interactive e- learning formats.</p>
                 </div>
-                <div class="col-6 ">
+                <div class="col-lg-6 col-12">
                     <img src="./assets/home/about.svg" class="w-100" alt="about">
                 </div>
             </div>
-            <div class="d-flex gap-5 justify-content-between">
-                <p class="w-75 mb-0 mt-3">Available on web, and mobile, built upon the edifice of its very own
+            <div class="d-flex gap-5 justify-content-between flex-column flex-lg-row">
+                <p class="text-lg-start text-center w-100 mb-0 mt-4">Available on web, and mobile, built upon the
+                    edifice of its very own
                     Learning Management
                     System, at
                     Knowlens, we aim to provide learner friendly content supported by just the right technology feature
                     set designed for learning impact and scalability.</p>
-                <button class="align-self-end  p-2 px-4 common-yellow-border">Read More</button>
+                <button class="align-self-end  read-more-btn  p-2 px-4 common-yellow-border">Read More</button>
             </div>
         </div>
 
@@ -129,11 +161,11 @@
         <!-- Products -->
         <!-- 1 -->
 
-        <div class="container d-flex common-box-wrapper d-flex  align-items-end">
-            <div class="col-5">
+        <div class="container d-flex common-box-wrapper flex-column flex-lg-row  align-items-end">
+            <div class="col-lg-5 col-12">
                 <img src="./assets/home/common-box.svg" class="w-100" alt="common-box">
             </div>
-            <div class="col-7 ps-5 common-box-content">
+            <div class="col-lg-7 col-12 ps-lg-5 p-0 common-box-content mt-4 mt-lg-0">
                 <h6>Our Products</h6>
                 <h2 class="gradient-text">Film / Web series based courses</h2>
                 <p>Knowlens Off the shelf products are fully formed film based courses shot either in short video
@@ -149,8 +181,8 @@
 
         <!-- 2 -->
 
-        <div class="container d-flex common-box-wrapper d-flex  align-items-end">
-            <div class="col-7 pe-5 common-box-content">
+        <div class="container d-flex common-box-wrapper flex-column-reverse flex-lg-row  align-items-end">
+            <div class="col-lg-7 col-12 pe-lg-5 p-0 common-box-content mt-4 mt-lg-0">
                 <h6>Our Products</h6>
                 <h2 class="gradient-text">Content Studio</h2>
                 <p>E Box …a toolkit to create in-house videos for enterprises, is the perfect compliment to Knowlens
@@ -161,24 +193,24 @@
                     Our
                     Courses</a>
             </div>
-            <div class="col-5">
+            <div class="col-lg-5 col-12 ">
                 <img src="./assets/home/common-box.svg" class="w-100" alt="common-box">
             </div>
         </div>
         <!-- 3 -->
 
-        <div class="container d-flex common-box-wrapper d-flex  align-items-end">
-            <div class="col-5">
+        <div class="container d-flex common-box-wrapper flex-column flex-lg-row   align-items-end">
+            <div class="col-lg-5 col-12">
                 <img src="./assets/home/common-box.svg" class="w-100" alt="common-box">
             </div>
-            <div class="col-7 ps-5 common-box-content">
+            <div class="col-lg-7 col-12 ps-lg-5 p-0  common-box-content mt-4 mt-lg-0">
                 <h6>Our Products</h6>
                 <h2 class="gradient-text">Custom Content</h2>
                 <p>Knowledge is a key core competency for the organisation. We recognize that there are deep reservoirs
                     of knowledge and skills within ...
                 </p>
                 <a href="./Courses/lms.html"
-                    class="p-3 px-4 bg-white d-inline-block common-yellow-border text-black text-decoration-none">View
+                    class="p-3 px-5 bg-white d-inline-block common-yellow-border text-black text-decoration-none">View
                     More</a>
             </div>
         </div>
@@ -186,8 +218,8 @@
 
         <!-- 4 -->
 
-        <div class="container d-flex common-box-wrapper d-flex  align-items-end">
-            <div class="col-7 pe-5 common-box-content">
+        <div class="container d-flex common-box-wrapper flex-column-reverse flex-lg-row  align-items-end">
+            <div class="col-lg-7 col-12 pe-lg-5 p-0 common-box-content mt-4 mt-lg-0">
                 <h6>Our Products</h6>
                 <h2 class="gradient-text">Learning Management System</h2>
                 <p>All Knowlens content and tools, which create this immersive learning experience, sit upon the core
@@ -198,24 +230,24 @@
                     All
                     Product</a>
             </div>
-            <div class="col-5">
+            <div class="col-lg-5 col-12 ">
                 <img src="./assets/home/common-box.svg" class="w-100" alt="common-box">
             </div>
         </div>
 
         <!-- 5 -->
 
-        <div class="container d-flex common-box-wrapper d-flex  align-items-end">
-            <div class="col-5">
+        <div class="container d-flex common-box-wrapper flex-column flex-lg-row align-items-end">
+            <div class="col-lg-5 col-12">
                 <img src="./assets/home/common-box.svg" class="w-100" alt="common-box">
             </div>
-            <div class="col-7 ps-5 common-box-content">
+            <div class="col-lg-7 col-12 ps-lg-5 p-0  common-box-content mt-4 mt-lg-0">
                 <h6>Our Products</h6>
                 <h2 class="gradient-text">Film : Web series based courses</h2>
                 <p>Here is a catalogue of some of our best selling Knowlens courses.
                 </p>
                 <a href="./Courses/lms.html"
-                    class="p-3 px-4 bg-white d-inline-block common-yellow-border text-black text-decoration-none">View
+                    class="p-3 px-5 bg-white d-inline-block common-yellow-border text-black text-decoration-none">View
                     More</a>
             </div>
         </div>
@@ -227,7 +259,7 @@
             <h2 class="gradient-text">Off the Shelf Course</h2>
             <p class="w-75">Designed for easy rollout on both web, mobile as well as classroom mode, these courses
                 are an enterprise L & D person’s delight as they provide high ... </p>
-            <button class="bg-white p-2 px-4 common-yellow-border p-2">View All Courses</button>
+            <button class="bg-white p-2 px-4 common-yellow-border p-3 px-4 ">View All Courses</button>
             <div class="d-flex flex-wrap gap-5 mt-5">
 
                 <div class=" ourcourses-card ">
@@ -295,82 +327,6 @@
         </div>
 
 
-
-        <!-- clients -->
-        <div class="container our-clients-wrapper">
-            <h6 class="text-center">Our Clients</h6>
-            <h2 class="text-center gradient-text">Trust Brand</h2>
-            <div class="mt-5 d-flex flex-column gap-4">
-                <div class="d-flex gap-4">
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-bo x">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                </div>
-                <div class="d-flex gap-4 align-self-end">
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                </div>
-                <div class="d-flex gap-4">
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                </div>
-                <div class="d-flex gap-4 align-self-end">
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                    <div class="client-box">
-                        <img src="./assets/common/spotify.png" alt="spotify">
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
         <!-- reviews -->
@@ -487,7 +443,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- first row -->
 
             </div>
         </div>
@@ -495,7 +450,7 @@
 
         <!-- get in touch -->
         <div class=" d-flex flex-column container align-items-center get-in-touch-content get-in">
-            <h2 class="gradient-text">Get in touch</h2>
+            <h2 class="gradient-text text-center">Get in touch</h2>
             <input type="text" placeholder="Enter Your Email">
             <button class="bg-white text-black common-yellow-border p-2 px-4 mt-5"> Submit</button>
         </div>
@@ -503,8 +458,8 @@
         <!-- footer -->
 
         <footer class=" bg-black text-white ">
-            <div class="container py-5 d-flex">
-                <div class="col-4">
+            <div class="container py-5 d-flex flex-lg-row flex-column">
+                <div class="col-lg-4 col-12">
                     <div class="d-flex gap-3 align-items-center">
                         <img src="./assets/home/footer-logo.png" alt="footerlogo">
                         <p class="mb-0">Mangcoding</p>
@@ -516,8 +471,9 @@
 
                     <img src="./assets/home/home.svg" class="w-75 mt-4" alt="">
                 </div>
-                <div class="w-100 d-flex justify-content-end gap-5 ">
-                    <div class="col-2">
+                <div
+                    class="w-100 d-flex flex-wrap mt-4 mt-lg-0 justify-content-lg-end justify-content-lg-center gap-5 ">
+                    <div class="col-lg-2 col-5 ">
                         <h5>Pages</h5>
                         <div class="mt-5 d-flex flex-column footer-links gap-3">
                             <a href="">Home it work</a>
@@ -526,7 +482,7 @@
                             <a href="">Demo</a>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-5">
                         <h5>Service</h5>
                         <div class="mt-5 d-flex flex-column footer-links gap-3">
                             <a href="">Shopify</a>
@@ -534,7 +490,7 @@
                             <a href="">UI/UX Design</a>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-12">
                         <h5>Contact</h5>
                         <div class="mt-5 d-flex flex-column footer-links gap-3">
                             <span><img src="./assets/common/phone.png" height="25" width="25" class="me-2" alt="phone">

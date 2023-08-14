@@ -6,8 +6,9 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../style/getintouch.css">
+    <link rel="stylesheet" href="../index.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +19,11 @@
 
 <body>
     <section class="container-fluid p-0 contact-wrapper">
-        <nav class="p-4 navbar  text-white ">
-            <div class="container d-flex justify-content-between">
-                <a href="/" class="">
-                    <img src="../assets/home/logo.png" alt="">
+        <nav class="p-4 navbar   text-white  ">
+            <div class="container d-flex justify-content-between p-lg-auto p-0">
+                <a href="/" class="d-flex gap-2 text-decoration-none align-items-center">
+                    <img src="https://static.knowlens.com/site/assets/images/small-logo.png" alt="">
+                    <h3 class="text-white mb-0">KnowLens</h3>
                 </a>
                 <ul class="d-flex nav-links gap-4 mb-0">
                     <li>
@@ -40,9 +42,36 @@
                         <a href="/contactus/index.html">Enquire</a>
                     </li>
                 </ul>
+                <span class="nav-links-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><img src="../assets/common/Menu.png" alt="hamburder"></span>
             </div>
         </nav>
 
+
+        <div class="offcanvas offcanvas-end text-white w-75" style="background-color: #1b1a1b;" tabindex="-1"
+            id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <!-- <div class="offcanvas-header">
+            </div> -->
+            <div class="offcanvas-body nav-mobile-links ">
+                <ul class=" gap-4 mb-0">
+                    <li>
+                        <a href="">Refer a Friend</a>
+                    </li>
+                    <li>
+                        <a href="">Corporate</a>
+                    </li>
+                    <li>
+                        <a href="">Cataglogue</a>
+                    </li>
+                    <li>
+                        <a href="/auth/Signin.html">Sign in</a>
+                    </li>
+                    <li>
+                        <a href="/contactus/index.html">Enquire</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- banner -->
         <div class="d-flex justify-content-center">
             <div id="carouselExampleIndicators" class="carousel slide rounded-5 overflow-hidden col-11">
@@ -126,9 +155,11 @@
         </div>
         <!-- footer -->
 
+
+        <!-- footer -->
         <footer class=" bg-black text-white ">
-            <div class="container py-5 d-flex">
-                <div class="col-4">
+            <div class="container py-5 d-flex flex-lg-row flex-column">
+                <div class="col-lg-4 col-12">
                     <div class="d-flex gap-3 align-items-center">
                         <img src="../assets/home/footer-logo.png" alt="footerlogo">
                         <p class="mb-0">Mangcoding</p>
@@ -140,8 +171,9 @@
 
                     <img src="../assets/home/home.svg" class="w-75 mt-4" alt="">
                 </div>
-                <div class="w-100 d-flex justify-content-end gap-5 ">
-                    <div class="col-2">
+                <div
+                    class="w-100 d-flex flex-wrap mt-4 mt-lg-0 justify-content-lg-end justify-content-lg-center gap-5 ">
+                    <div class="col-lg-2 col-5 ">
                         <h5>Pages</h5>
                         <div class="mt-5 d-flex flex-column footer-links gap-3">
                             <a href="">Home it work</a>
@@ -150,7 +182,7 @@
                             <a href="">Demo</a>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-5">
                         <h5>Service</h5>
                         <div class="mt-5 d-flex flex-column footer-links gap-3">
                             <a href="">Shopify</a>
@@ -158,7 +190,7 @@
                             <a href="">UI/UX Design</a>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-12">
                         <h5>Contact</h5>
                         <div class="mt-5 d-flex flex-column footer-links gap-3">
                             <span><img src="../assets/common/phone.png" height="25" width="25" class="me-2" alt="phone">
@@ -189,6 +221,7 @@
                         alt="linkedin"></span>
             </div>
         </footer>
+
     </section>
 
 

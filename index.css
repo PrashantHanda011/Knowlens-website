@@ -81,7 +81,6 @@ body {
 .home-about-content h2 {
   font-size: 4rem;
   font-weight: 700;
-  width: 60%;
 }
 
 
@@ -359,19 +358,6 @@ body {
 }
 
 /* Animation */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateX(calc(-250px * 6));
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
 
 
 
@@ -422,14 +408,91 @@ body {
 
 @keyframes scrollright {
   0% {
+    transform: translateX(250px*2);
+  }
+
+  50% {
+    transform: translateX(calc(0));
+  }
+
+  100% {
+    transform: translateX(250px*4);
+  }
+}
+
+@keyframes scroll {
+  0% {
     transform: translateX(0);
   }
 
   50% {
-    transform: translateX(calc(250px * 6));
+    transform: translateX(calc(-250px * 6));
   }
 
   100% {
     transform: translateX(0);
+  }
+}
+
+
+.nav-links-menu {
+  display: none;
+}
+
+.read-more-btn {
+  width: 25%;
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    display: none !important;
+  }
+
+  .nav-links-menu {
+    display: inline-block;
+  }
+
+  .nav-links-menu img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .nav-mobile-links a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-mobile-links li {
+    list-style: none;
+    margin: 20px 5px;
+  }
+
+  .read-more-btn {
+    width: 100%;
+  }
+
+  .ourcourses-card {
+    width: 100%;
+  }
+
+  .ourcourses-card img {
+    height: 200px;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .get-in-touch-content h2 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem !important;
   }
 }
