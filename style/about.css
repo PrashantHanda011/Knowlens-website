@@ -79,7 +79,7 @@
   color: white;
 }
 
-.about-wrapper {
+/* .about-wrapper {
   background: linear-gradient(222deg, black, #000000, #1f2043, #2A162D);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -97,7 +97,7 @@
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 
 .about-wrapper {
   /* background: linear-gradient(to bottom, black, #000000, #1f24be, #2A162D); */
@@ -127,5 +127,12 @@
 
   100% {
     background: linear-gradient(-130deg, black, #2b162f, #35345c, black);
+  }
+}
+
+@media (max-width: 800px) {
+  .research-box {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }

@@ -19,10 +19,11 @@
 
 <body>
     <section class="container-fluid p-0 case-study-wrapper">
-        <nav class="p-4 navbar  text-white ">
-            <div class="container d-flex justify-content-between">
-                <a href="/" class="">
-                    <img src="../assets/home/logo.png" alt="">
+        <nav class="p-4 navbar   text-white  ">
+            <div class="container d-flex justify-content-between p-lg-auto p-0">
+                <a href="/" class="d-flex gap-2 text-decoration-none align-items-center">
+                    <img src="https://static.knowlens.com/site/assets/images/small-logo.png" alt="">
+                    <h3 class="text-white mb-0">KnowLens</h3>
                 </a>
                 <ul class="d-flex nav-links gap-4 mb-0">
                     <li>
@@ -41,8 +42,36 @@
                         <a href="/contactus/index.html">Enquire</a>
                     </li>
                 </ul>
+                <span class="nav-links-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><img src="../assets/common/Menu.png" alt="hamburder"></span>
             </div>
         </nav>
+
+
+        <div class="offcanvas offcanvas-end text-white w-75" style="background-color: #1b1a1b;" tabindex="-1"
+            id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <!-- <div class="offcanvas-header">
+            </div> -->
+            <div class="offcanvas-body nav-mobile-links ">
+                <ul class=" gap-4 mb-0">
+                    <li>
+                        <a href="">Refer a Friend</a>
+                    </li>
+                    <li>
+                        <a href="">Corporate</a>
+                    </li>
+                    <li>
+                        <a href="">Cataglogue</a>
+                    </li>
+                    <li>
+                        <a href="/auth/Signin.html">Sign in</a>
+                    </li>
+                    <li>
+                        <a href="/contactus/index.html">Enquire</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <!-- banner -->
         <div class="d-flex justify-content-center">
@@ -64,7 +93,7 @@
                         </div>
                     </div>
                     <div class="carousel-item position-relative ">
-                        <img src="../assets/home/banner.svg" class="d-block w-100" alt="...">
+                        <img src="../assets/home/banner.svg" class="d-block " alt="...">
                         <div class="banner-content">
                             <h1>LMS</h1>
                             <p>We help train your teams to perform to the best of their abilities. Our platform offers
@@ -72,7 +101,7 @@
                         </div>
                     </div>
                     <div class="carousel-item position-relative ">
-                        <img src="../assets/home/banner.svg" class="d-block w-100" alt="...">
+                        <img src="../assets/home/banner.svg" class="d-block " alt="...">
                         <div class="banner-content">
                             <h1>LMS</h1>
                             <p>We help train your teams to perform to the best of their abilities. Our platform offers
@@ -93,9 +122,10 @@
             </div>
         </div>
 
+
         <!-- get in touch -->
 
-        <div class="container d-flex justify-content-between case-study-wrapper my-5">
+        <div class="container d-flex flex-column flex-lg-row justify-content-between case-study-wrapper my-5">
             <div>
                 <span class="me-4">View By ></span>
                 <button class="p-2 px-4 rounded bg-transparent text-white  border-white">By Industry</button>
@@ -117,7 +147,7 @@
             <h4 class="text-secondary">Case Studies</h4>
             <h3 class="gradient-text mb-5"><strong>Lorem ipsum dolor sit amet consectetur.</strong></h3>
             <div class="d-flex flex-wrap mt-4 justify-content-between gap-5">
-                <div class=" casestudy-boxes position-relative">
+                <div class="casestudy-boxes position-relative">
                     <img src="../assets/home/home.svg" class="w-100" alt="">
                     <div class="casestudy-boxes-brand d-flex align-items-center gap-3">
                         <img src="../assets/common/spotify.png" height="60" class="bg-white p-3 rounded" width="60"
@@ -214,101 +244,115 @@
         <div class="trust-wall-wrapper container">
             <h6 class="text-center">What They Say</h6>
             <h2 class="text-center gradient-text">Trust Wall</h2>
+
             <div class='mt-5 d-flex flex-column gap-5'>
 
-                <!-- first row -->
-                <div class="overflow-auto d-flex">
+                <div class="slider">
+                    <div class="slide-track gap-4 col-12">
+                        <div class="slide col-7">
+                            <img src="../assets/home/home.svg" class="w-100" alt="review">
 
-                    <div class="col-6 d-flex gap-5">
-                        <img src="../assets/home/home.svg" class="w-75  rounded" style="object-fit: cover;"
-                            alt="review">
-                        <div class="col-6 ">
+                        </div>
+                        <div class="slide col-7  bg-white text-black p-3">
                             <span>“</span>
-                            <p>I believed great results would not be possible without the amazing combination of talent
+                            <p>I believed great results would not be possible without the amazing combination of
+                                talent
+                                and
+                                personality of the team."</p>
+                            <small>~ Vinay</small>
+                        </div>
+                        <div class="slide col-7">
+                            <img src="../assets/home/home.svg" class="w-100" alt="review">
+
+                        </div>
+                        <div class="slide col-7  bg-white text-black p-3">
+                            <span>“</span>
+                            <p>I believed great results would not be possible without the amazing combination of
+                                talent
+                                and
+                                personality of the team."</p>
+                            <small>~ Vinay</small>
+                        </div>
+                        <div class="slide col-7">
+                            <img src="../assets/home/home.svg" class="w-100" alt="review">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- second row -->
+
+                <div class="slider">
+                    <div class="slide-track-2 gap-4 col-12">
+                        <div class="slide col-7">
+                            <img src="../assets/home/home.svg" class="w-100" alt="review">
+
+                        </div>
+                        <div class="slide col-7  bg-white text-black p-3">
+                            <span>“</span>
+                            <p>I believed great results would not be possible without the amazing combination of
+                                talent
+                                and
+                                personality of the team."</p>
+                            <small>~ Vinay</small>
+                        </div>
+                        <div class="slide col-7">
+                            <img src="../assets/home/home.svg" class="w-100" alt="review">
+
+                        </div>
+                        <div class="slide col-7  bg-white text-black p-3">
+                            <span>“</span>
+                            <p>I believed great results would not be possible without the amazing combination of
+                                talent
+                                and
+                                personality of the team."</p>
+                            <small>~ Vinay</small>
+                        </div>
+                        <div class="slide col-7">
+                            <img src="../assets/home/home.svg" class="w-100" alt="review">
+
+                        </div>
+                        <div class="slide col-7  bg-white text-black p-3">
+                            <span>“</span>
+                            <p>I believed great results would not be possible without the amazing combination of
+                                talent
                                 and
                                 personality of the team."</p>
                             <small>~ Vinay</small>
                         </div>
                     </div>
-                    <!-- <div class="col-6 d-flex gap-5 ">
-                    <img src="./assets/home/home.svg" class="w-75  rounded" style="object-fit: cover;" alt="review">
-                    <div class="col-6 ">
-                        <span>“</span>
-                        <p>I believed great results would not be possible without the amazing combination of talent and
-                            personality of the team."</p>
-                        <small>~ Vinay</small>
-                    </div>
-                </div> -->
+                </div>
 
-                </div>
-                <!-- first row -->
-                <div class="overflow-auto d-flex">
-                    <!-- 
-                <div class="col-6 d-flex gap-5">
-                    <img src="./assets/home/home.svg" class="w-75  rounded" style="object-fit: cover;" alt="review">
-                    <div class="col-6 ">
-                        <span>“</span>
-                        <p>I believed great results would not be possible without the amazing combination of talent and
-                            personality of the team."</p>
-                        <small>~ Vinay</small>
-                    </div>
-                </div>
-                <div class="col-6 d-flex gap-5">
-                    <img src="./assets/home/home.svg" class="w-75  rounded" style="object-fit: cover;" alt="review">
-                    <div class="col-6 ">
-                        <span>“</span>
-                        <p>I believed great results would not be possible without the amazing combination of talent and
-                            personality of the team."</p>
-                        <small>~ Vinay</small>
-                    </div>
-                </div> -->
-                    <div class="col-6 d-flex gap-5">
-                        <img src="../assets/home/home.svg" class="w-75  rounded" style="object-fit: cover;"
-                            alt="review">
-                        <div class="col-6 ">
+                <div class="slider">
+                    <div class="slide-track  gap-4 col-12">
+                        <div class="slide col-7">
+                            <img src="../assets/home/home.svg" class="w-100" alt="review">
+
+                        </div>
+                        <div class="slide col-7  bg-white text-black p-3">
                             <span>“</span>
-                            <p>I believed great results would not be possible without the amazing combination of talent
+                            <p>I believed great results would not be possible without the amazing combination of
+                                talent
                                 and
                                 personality of the team."</p>
                             <small>~ Vinay</small>
                         </div>
-                    </div>
+                        <div class="slide col-7">
+                            <img src="../assets/home/home.svg" class="w-100" alt="review">
 
-                </div>
-
-                <!-- first row -->
-                <div class="overflow-auto d-flex">
-
-                    <!-- <div class="col-6 d-flex gap-5">
-                    <img src="./assets/home/home.svg" class="w-75  rounded" style="object-fit: cover;" alt="review">
-                    <div class="col-6 ">
-                        <span>“</span>
-                        <p>I believed great results would not be possible without the amazing combination of talent and
-                            personality of the team."</p>
-                        <small>~ Vinay</small>
-                    </div>
-                </div>
-                <div class="col-6 d-flex gap-5">
-                    <img src="./assets/home/home.svg" class="w-75  rounded" style="object-fit: cover;" alt="review">
-                    <div class="col-6 ">
-                        <span>“</span>
-                        <p>I believed great results would not be possible without the amazing combination of talent and
-                            personality of the team."</p>
-                        <small>~ Vinay</small>
-                    </div>
-                </div> -->
-                    <div class="col-6 d-flex gap-5">
-                        <img src="../assets/home/home.svg" class="w-75  rounded" style="object-fit: cover;"
-                            alt="review">
-                        <div class="col-6 ">
+                        </div>
+                        <div class="slide col-7  bg-white text-black p-3">
                             <span>“</span>
-                            <p>I believed great results would not be possible without the amazing combination of talent
+                            <p>I believed great results would not be possible without the amazing combination of
+                                talent
                                 and
                                 personality of the team."</p>
                             <small>~ Vinay</small>
                         </div>
-                    </div>
+                        <div class="slide col-7">
+                            <img src="../assets/home/home.svg" class="w-100" alt="review">
 
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -326,11 +370,12 @@
 
 
 
-        <!-- footer -->
 
+
+        <!-- footer -->
         <footer class=" bg-black text-white ">
-            <div class="container py-5 d-flex">
-                <div class="col-4">
+            <div class="container py-5 d-flex flex-lg-row flex-column">
+                <div class="col-lg-4 col-12">
                     <div class="d-flex gap-3 align-items-center">
                         <img src="../assets/home/footer-logo.png" alt="footerlogo">
                         <p class="mb-0">Mangcoding</p>
@@ -342,8 +387,9 @@
 
                     <img src="../assets/home/home.svg" class="w-75 mt-4" alt="">
                 </div>
-                <div class="w-100 d-flex justify-content-end gap-5 ">
-                    <div class="col-2">
+                <div
+                    class="w-100 d-flex flex-wrap mt-4 mt-lg-0 justify-content-lg-end justify-content-lg-center gap-5 ">
+                    <div class="col-lg-2 col-5 ">
                         <h5>Pages</h5>
                         <div class="mt-5 d-flex flex-column footer-links gap-3">
                             <a href="">Home it work</a>
@@ -352,7 +398,7 @@
                             <a href="">Demo</a>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-5">
                         <h5>Service</h5>
                         <div class="mt-5 d-flex flex-column footer-links gap-3">
                             <a href="">Shopify</a>
@@ -360,7 +406,7 @@
                             <a href="">UI/UX Design</a>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-12">
                         <h5>Contact</h5>
                         <div class="mt-5 d-flex flex-column footer-links gap-3">
                             <span><img src="../assets/common/phone.png" height="25" width="25" class="me-2" alt="phone">
@@ -391,6 +437,7 @@
                         alt="linkedin"></span>
             </div>
         </footer>
+
     </section>
 
 
