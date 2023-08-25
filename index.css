@@ -68,8 +68,14 @@ body {
   color: #EEB543;
 }
 
+.carousel-item {
+  height: 100%;
+}
+
 .carousel-item img {
-  /* width: 80% !important; */
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
 }
 
 
@@ -200,14 +206,21 @@ body {
 .get-in-touch-content h2 {
   font-size: 4rem;
   font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
 .get-in-touch-content input {
   width: 40%;
   margin-top: 2rem;
-  padding: 1rem;
+  padding-bottom: 1rem;
+  background: transparent;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
+}
+
+.get-in-touch-content input::placeholder {
+  color: white;
 }
 
 /* review */
@@ -370,6 +383,11 @@ body {
   overflow: hidden;
   position: relative;
   width: 100%;
+}
+
+.slide {
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 .slider::before,
