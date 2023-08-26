@@ -71,4 +71,9 @@
   .casestudy-boxes {
     width: 100%;
   }
+
+  .brand-detail-icons {
+    /* top: -2%; */
+    position: relative;
+  }
 }
