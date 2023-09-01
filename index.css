@@ -417,24 +417,24 @@ body {
 }
 
 .slide-track-2 {
-  animation: scroll var(--animationSpeed) linear infinite;
+  animation: scrollright var(--animationSpeed) linear infinite;
   display: flex;
+  animation-direction: alternate-reverse;
   width: calc(250px * 4);
 }
 
 
 @keyframes scrollright {
   0% {
-    transform: translateX(calc(0));
+    transform: translateX(-100%);
   }
 
   50% {
-    transform: translateX(250px*4);
+    transform: translateX(80%);
   }
 
   100% {
-    transform: translateX(calc(0));
-    /* transform: translateX(250px*4); */
+    transform: translateX(-100%);
   }
 }
 

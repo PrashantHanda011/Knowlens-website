@@ -122,7 +122,8 @@
   }
 }
 
-.offself-wrapper {
+.offself-wrapper,
+.lms-wrapper {
   /* background: linear-gradient(to bottom, black, #000000, #1f24be, #2A162D); */
   background: linear-gradient(-130deg, black, #2b162f, #35345c, black);
   /* background: linear-gradient(to bottom, #ff0000, #00ff00, #0000ff); */
