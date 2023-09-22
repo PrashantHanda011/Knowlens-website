@@ -35,7 +35,36 @@
   margin: 8rem auto;
 }
 
+/* .driver-content */
+.about-center-text {
+  margin: 8rem auto;
+  font-size: 1.2rem;
+}
 
+.driver-content {
+  margin: 8rem auto;
+  align-items: center;
+}
+
+.driver-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.driver-content h4 {
+  font-weight: 700;
+}
+
+
+/* our product */
+.our-product-content {
+  margin: 8rem auto;
+}
+
+.our-product-content h4 {
+  font-size: 3rem;
+  font-weight: 700;
+}
 
 /* features */
 
