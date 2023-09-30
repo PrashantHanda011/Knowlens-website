@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="../style/about.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <link href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.css" rel="stylesheet">
+
     <link
         href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -140,6 +143,36 @@
                 trained through films? Is the impact and retention long lasting?</p>
         </div>
 
+
+        <!-- story timeline -->
+        <div id="container-box">
+            <div class="massiveImage"></div>
+
+        </div>
+
+        <!-- counters -->
+        <div class="driver-content flex-wrap container d-flex  justify-content-around  px-5">
+            <div class="d-flex flex-column col-4 align-items-center about-counter-content">
+                <h5 class="gradient-text">100 +</h5>
+                <p>Customers</p>
+            </div>
+            <div class="d-flex flex-column col-4 align-items-center about-counter-content">
+                <h5 class="gradient-text">6 +</h5>
+                <p class="w-50">complete visual learning products</p>
+            </div>
+            <div class="d-flex flex-column col-4 align-items-center about-counter-content">
+                <h5 class="gradient-text">5000 +</h5>
+                <p>Videos</p>
+            </div>
+            <div class="d-flex flex-column col-4 align-items-center mt-5 about-counter-content">
+                <h5 class="gradient-text">12 </h5>
+                <p>Languages</p>
+            </div>
+            <div class="d-flex flex-column col-4 align-items-center about-counter-content">
+                <h5 class="gradient-text">300,000 </h5>
+                <p>Active Users</p>
+            </div>
+        </div>
         <!-- driver -->
         <div class=" d-flex flex-column container  driver-content ">
             <h2 class="gradient-text">What are the Knowlens drivers?</h2>
@@ -605,11 +638,36 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/ScrollTrigger.min.js"></script>
 
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <!-- Include Slick Carousel JS -->
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <!-- Your custom JavaScript -->
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        const innerHeight = 300
+        // gsap.set(".massiveImage", { backgroundImage: `url(https://source.unsplash.com/random/${innerWidth * 3}x${innerHeight})` })
+        gsap.set(".massiveImage", { background: 'url("../assets/about/timeline.svg")', innerHeight: "500" })
+
+        console.log(innerHeight)
+        gsap.to(".massiveImage", {
+            xPercent: -102,
+            x: () => innerWidth,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".massiveImage",
+                start: "center center",
+                end: () => innerWidth * 3,
+                scrub: true,
+                pin: true,
+                invalidateOnRefresh: true,
+                anticipatePin: 1
+            }
+        });
+
+    </script>
     <script type="text/javascript" src="./about.js"></script>
 
 
