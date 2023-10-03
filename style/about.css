@@ -233,3 +233,35 @@
 #container-box {
   width: 300vw;
 }
+
+.counter {
+  font-size: 36px;
+  color: #333;
+  transition: 1s ease-in-out;
+  /* Smooth animation transition */
+}
+
+.story-parent {
+  height: 420vh;
+}
+
+.story-container {
+  overflow: hidden;
+  position: sticky;
+  top: 20%;
+  height: 100vh;
+}
+
+.storyScroller {
+  width: 420vw;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: 0.1s ease-in-out;
+  /* transition-property: */
+  /* transition:  ease-in; */
+  will-change: tranform;
+  background: url(../assets/about/timeline.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
