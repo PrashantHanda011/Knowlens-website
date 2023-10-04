@@ -58,6 +58,7 @@ function transform(section) {
   const offSetTop = section.parentElement.offsetTop;
   const scrollSection = section.querySelector('.storyScroller')
   let percentage = ((window.scrollY - offSetTop) / window.innerHeight * 100)
-  percentage = percentage < 0 ? 0 : percentage > 420 ? 420 : percentage
+  console.log(percentage)
+  percentage = percentage < 0 ? 0 : percentage > 320 ? 325 : percentage
   scrollSection.style.transform = `translate3d(${-percentage}vw,0,0)`
 }
